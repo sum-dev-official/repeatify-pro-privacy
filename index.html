@@ -1,0 +1,1565 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy & Terms of Service - Repeatify Pro</title>
+  <meta name="description" content="Official Privacy Policy, Data Safety Disclosures, and Terms of Service for Repeatify Pro (com.repeatify.sumdev.app) developed by SumDev Studio.">
+  <link rel="icon" type="image/png" href="assets/app_logo.png">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <style>
+:root {
+  --font-heading: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  
+  --bg-color: #090814;
+  --bg-card: rgba(22, 18, 48, 0.65);
+  --bg-card-hover: rgba(30, 24, 66, 0.85);
+  --bg-glass: rgba(14, 11, 31, 0.75);
+  --border-color: rgba(139, 92, 246, 0.18);
+  --border-hover: rgba(139, 92, 246, 0.4);
+  
+  --text-main: #F8FAFC;
+  --text-muted: #94A3B8;
+  --text-dim: #64748B;
+  
+  --primary: #6366F1;
+  --primary-glow: rgba(99, 102, 241, 0.35);
+  --secondary: #8B5CF6;
+  --accent-pink: #EC4899;
+  --accent-cyan: #06B6D4;
+  --accent-green: #10B981;
+  --accent-amber: #F59E0B;
+  
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-full: 9999px;
+  
+  --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.15);
+  --shadow-md: 0 10px 30px -10px rgba(0, 0, 0, 0.35);
+  --shadow-glow: 0 0 35px -5px var(--primary-glow);
+}
+
+[data-theme="light"] {
+  --bg-color: #F8FAFC;
+  --bg-card: rgba(255, 255, 255, 0.85);
+  --bg-card-hover: #FFFFFF;
+  --bg-glass: rgba(255, 255, 255, 0.8);
+  --border-color: rgba(99, 102, 241, 0.15);
+  --border-hover: rgba(99, 102, 241, 0.35);
+  
+  --text-main: #0F172A;
+  --text-muted: #475569;
+  --text-dim: #94A3B8;
+  
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 12px 32px -4px rgba(99, 102, 241, 0.08);
+  --shadow-glow: 0 0 25px rgba(99, 102, 241, 0.15);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  line-height: 1.65;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  overflow-x: hidden;
+  position: relative;
+  min-height: 100vh;
+}
+
+/* Background Ambient Orbs */
+.ambient-glow {
+  position: fixed;
+  width: 550px;
+  height: 550px;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 0;
+  filter: blur(120px);
+  opacity: 0.18;
+}
+
+.ambient-glow-1 {
+  top: -100px;
+  left: -150px;
+  background: radial-gradient(circle, #6366F1, #8B5CF6);
+}
+
+.ambient-glow-2 {
+  top: 40%;
+  right: -180px;
+  background: radial-gradient(circle, #EC4899, #8B5CF6);
+}
+
+.ambient-glow-3 {
+  bottom: 0;
+  left: 20%;
+  background: radial-gradient(circle, #06B6D4, #3B82F6);
+}
+
+/* Container */
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 24px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Sticky Navigation Header */
+header.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  background: var(--bg-glass);
+  border-bottom: 1px solid var(--border-color);
+  transition: all 0.3s ease;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 74px;
+}
+
+.brand-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: var(--text-main);
+}
+
+.brand-logo {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px var(--primary-glow);
+  object-fit: cover;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.brand-title {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.brand-badge {
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 3px 8px;
+  border-radius: var(--radius-full);
+  background: linear-gradient(135deg, #6366F1, #8B5CF6);
+  color: #FFFFFF;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.theme-toggle-btn {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  color: var(--text-main);
+  width: 42px;
+  height: 42px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 1.15rem;
+  transition: all 0.2s ease;
+}
+
+.theme-toggle-btn:hover {
+  border-color: var(--primary);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+}
+
+.header-contact-link {
+  font-size: 0.88rem;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 9px 18px;
+  border-radius: var(--radius-full);
+  background: linear-gradient(135deg, #6366F1, #8B5CF6);
+  color: #FFFFFF;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  box-shadow: 0 4px 14px var(--primary-glow);
+  transition: all 0.2s ease;
+}
+
+.header-contact-link:hover {
+  opacity: 0.92;
+  transform: translateY(-1px);
+}
+
+/* Hero Section */
+.hero {
+  padding: 56px 0 36px 0;
+  text-align: center;
+}
+
+.compliance-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(16, 185, 129, 0.12);
+  border: 1px solid rgba(16, 185, 129, 0.35);
+  color: var(--accent-green);
+  padding: 6px 16px;
+  border-radius: var(--radius-full);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  margin-bottom: 20px;
+}
+
+.compliance-pill .pulse-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--accent-green);
+  box-shadow: 0 0 10px var(--accent-green);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(0.95); opacity: 0.7; }
+  50% { transform: scale(1.3); opacity: 1; }
+  100% { transform: scale(0.95); opacity: 0.7; }
+}
+
+.hero-title {
+  font-family: var(--font-heading);
+  font-size: clamp(2.2rem, 5vw, 3.4rem);
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  margin-bottom: 14px;
+}
+
+.hero-title .gradient-text {
+  background: linear-gradient(135deg, #818CF8, #C084FC, #F472B6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-subtitle {
+  color: var(--text-muted);
+  font-size: 1.1rem;
+  max-width: 680px;
+  margin: 0 auto 28px auto;
+}
+
+/* Metadata Chips */
+.meta-chips {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 36px;
+}
+
+.meta-chip {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  padding: 6px 14px;
+  border-radius: var(--radius-md);
+  font-size: 0.84rem;
+  color: var(--text-muted);
+}
+
+.meta-chip strong {
+  color: var(--text-main);
+  font-weight: 600;
+}
+
+/* Tab Navigation Switcher */
+.tab-switcher-wrapper {
+  position: sticky;
+  top: 74px;
+  z-index: 90;
+  padding: 12px 0;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  background: rgba(9, 8, 20, 0.85);
+  margin-bottom: 36px;
+}
+
+[data-theme="light"] .tab-switcher-wrapper {
+  background: rgba(248, 250, 252, 0.85);
+}
+
+.tab-switcher {
+  display: flex;
+  background: var(--bg-card);
+  padding: 6px;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--border-color);
+  max-width: 620px;
+  margin: 0 auto;
+  gap: 6px;
+}
+
+.tab-btn {
+  flex: 1;
+  border: none;
+  background: transparent;
+  color: var(--text-muted);
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.95rem;
+  padding: 11px 16px;
+  border-radius: var(--radius-full);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all 0.25s ease;
+}
+
+.tab-btn:hover {
+  color: var(--text-main);
+}
+
+.tab-btn.active {
+  background: linear-gradient(135deg, #6366F1, #8B5CF6);
+  color: #FFFFFF;
+  box-shadow: 0 4px 16px var(--primary-glow);
+}
+
+/* Quick Search Filter */
+.search-wrapper {
+  max-width: 480px;
+  margin: 0 auto 36px auto;
+  position: relative;
+}
+
+.search-input {
+  width: 100%;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  color: var(--text-main);
+  padding: 13px 20px 13px 44px;
+  border-radius: var(--radius-full);
+  font-family: var(--font-body);
+  font-size: 0.92rem;
+  outline: none;
+  transition: all 0.25s ease;
+}
+
+.search-input:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 20px var(--primary-glow);
+}
+
+.search-icon {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-dim);
+  font-size: 1.1rem;
+}
+
+/* Layout with Sidebar & Content */
+.main-grid {
+  display: grid;
+  grid-template-columns: 270px 1fr;
+  gap: 40px;
+  align-items: start;
+  margin-bottom: 72px;
+}
+
+@media (max-width: 860px) {
+  .main-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
+
+/* Sticky Sidebar Table of Contents */
+.toc-sidebar {
+  position: sticky;
+  top: 170px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.toc-title {
+  font-family: var(--font-heading);
+  font-size: 0.88rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-dim);
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.toc-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.toc-link {
+  color: var(--text-muted);
+  text-decoration: none;
+  font-size: 0.88rem;
+  font-weight: 500;
+  padding: 7px 12px;
+  border-radius: var(--radius-sm);
+  display: block;
+  transition: all 0.2s ease;
+  line-height: 1.35;
+}
+
+.toc-link:hover,
+.toc-link.active {
+  color: var(--text-main);
+  background: rgba(99, 102, 241, 0.12);
+  border-left: 3px solid var(--primary);
+  padding-left: 10px;
+}
+
+/* Policy Content Cards */
+.content-section {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.policy-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 34px;
+  box-shadow: var(--shadow-sm);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  transition: all 0.25s ease;
+  position: relative;
+}
+
+.policy-card:hover {
+  border-color: var(--border-hover);
+  box-shadow: var(--shadow-md);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.card-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.35rem;
+  flex-shrink: 0;
+}
+
+.icon-purple { background: rgba(99, 102, 241, 0.15); color: #818CF8; }
+.icon-pink { background: rgba(236, 72, 153, 0.15); color: #F472B6; }
+.icon-green { background: rgba(16, 185, 129, 0.15); color: #34D399; }
+.icon-amber { background: rgba(245, 158, 11, 0.15); color: #FBBF24; }
+.icon-blue { background: rgba(6, 182, 212, 0.15); color: #38BDF8; }
+
+.card-title {
+  font-family: var(--font-heading);
+  font-size: 1.42rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.copy-anchor-btn {
+  margin-left: auto;
+  background: transparent;
+  border: none;
+  color: var(--text-dim);
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 6px;
+  border-radius: var(--radius-sm);
+  transition: all 0.2s;
+  opacity: 0.6;
+}
+
+.copy-anchor-btn:hover {
+  opacity: 1;
+  color: var(--primary);
+}
+
+.card-body p {
+  color: var(--text-muted);
+  font-size: 0.98rem;
+  margin-bottom: 16px;
+}
+
+.card-body p:last-child {
+  margin-bottom: 0;
+}
+
+.card-body ul, .card-body ol {
+  color: var(--text-muted);
+  padding-left: 24px;
+  margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.card-body li strong {
+  color: var(--text-main);
+}
+
+/* Highlight / Alert Callout */
+.alert-box {
+  background: rgba(99, 102, 241, 0.09);
+  border-left: 4px solid var(--primary);
+  border-radius: var(--radius-sm);
+  padding: 16px 20px;
+  margin: 20px 0;
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+}
+
+.alert-box.green {
+  background: rgba(16, 185, 129, 0.09);
+  border-color: var(--accent-green);
+}
+
+.alert-box.amber {
+  background: rgba(245, 158, 11, 0.09);
+  border-color: var(--accent-amber);
+}
+
+.alert-icon {
+  font-size: 1.25rem;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.alert-text {
+  font-size: 0.92rem;
+  color: var(--text-main);
+}
+
+.alert-text strong {
+  display: block;
+  margin-bottom: 4px;
+}
+
+/* Feature Matrix Cards */
+.feature-matrix {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin: 20px 0;
+}
+
+.matrix-item {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border-color);
+  padding: 18px;
+  border-radius: var(--radius-md);
+  transition: all 0.2s ease;
+}
+
+[data-theme="light"] .matrix-item {
+  background: rgba(0, 0, 0, 0.02);
+}
+
+.matrix-item:hover {
+  border-color: var(--border-hover);
+  transform: translateY(-2px);
+}
+
+.matrix-header {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.05rem;
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.matrix-desc {
+  font-size: 0.86rem;
+  color: var(--text-muted);
+}
+
+/* Data Safety Google Play Table */
+.data-table-container {
+  overflow-x: auto;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  margin: 20px 0;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 0.9rem;
+}
+
+.data-table th {
+  background: rgba(99, 102, 241, 0.12);
+  color: var(--text-main);
+  font-family: var(--font-heading);
+  font-weight: 700;
+  padding: 14px 18px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.data-table td {
+  padding: 14px 18px;
+  border-bottom: 1px solid var(--border-color);
+  color: var(--text-muted);
+}
+
+.data-table tr:last-child td {
+  border-bottom: none;
+}
+
+.badge-no {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: rgba(16, 185, 129, 0.15);
+  color: var(--accent-green);
+  font-weight: 700;
+  font-size: 0.76rem;
+  padding: 3px 10px;
+  border-radius: var(--radius-full);
+}
+
+.badge-yes {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: rgba(99, 102, 241, 0.15);
+  color: #818CF8;
+  font-weight: 700;
+  font-size: 0.76rem;
+  padding: 3px 10px;
+  border-radius: var(--radius-full);
+}
+
+/* Action Banner / Deletion Box */
+.action-banner {
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.15), rgba(139, 92, 246, 0.1));
+  border: 1px solid rgba(139, 92, 246, 0.3);
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.action-info h3 {
+  font-family: var(--font-heading);
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.action-info p {
+  color: var(--text-muted);
+  font-size: 0.94rem;
+  max-width: 550px;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #6366F1, #8B5CF6);
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.95rem;
+  padding: 13px 26px;
+  border-radius: var(--radius-full);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 4px 18px var(--primary-glow);
+  transition: all 0.25s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px var(--primary-glow);
+}
+
+/* Footer */
+footer.site-footer {
+  border-top: 1px solid var(--border-color);
+  padding: 56px 0 36px 0;
+  background: var(--bg-glass);
+  margin-top: 80px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 48px;
+}
+
+@media (max-width: 768px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}
+
+.footer-brand p {
+  color: var(--text-muted);
+  font-size: 0.92rem;
+  margin-top: 12px;
+  max-width: 360px;
+}
+
+.footer-col h4 {
+  font-family: var(--font-heading);
+  font-size: 0.98rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-main);
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-links a {
+  color: var(--text-muted);
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.2s;
+}
+
+.footer-links a:hover {
+  color: var(--primary);
+}
+
+.footer-bottom {
+  border-top: 1px solid var(--border-color);
+  padding-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  font-size: 0.86rem;
+  color: var(--text-dim);
+}
+
+/* Print Styles */
+@media print {
+  header.site-header,
+  .ambient-glow,
+  .theme-toggle-btn,
+  .tab-switcher-wrapper,
+  .search-wrapper,
+  .toc-sidebar,
+  .copy-anchor-btn,
+  footer.site-footer {
+    display: none !important;
+  }
+  
+  body {
+    background: #FFFFFF !important;
+    color: #000000 !important;
+  }
+  
+  .main-grid {
+    display: block !important;
+  }
+  
+  .policy-card {
+    border: 1px solid #CCC !important;
+    box-shadow: none !important;
+    page-break-inside: avoid;
+    margin-bottom: 24px;
+  }
+}
+
+</style>
+</head>
+<body>
+  <!-- Ambient Gradient Background Elements -->
+  <div class="ambient-glow ambient-glow-1"></div>
+  <div class="ambient-glow ambient-glow-2"></div>
+  <div class="ambient-glow ambient-glow-3"></div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-content">
+      <a href="#" class="brand-wrapper">
+        <img src="assets/app_logo.png" alt="Repeatify Pro Logo" class="brand-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"><div class="brand-logo-fallback" style="display:none; width:42px; height:42px; border-radius:12px; background:linear-gradient(135deg, #6366F1, #8B5CF6); align-items:center; justify-content:center; font-size:20px; box-shadow:0 4px 14px rgba(99,102,241,0.4);">🔁</div>
+        <span class="brand-title">
+          Repeatify Pro
+          <span class="brand-badge">Official</span>
+        </span>
+      </a>
+
+      <div class="header-actions">
+        <button id="themeToggleBtn" class="theme-toggle-btn" title="Toggle Dark/Light Mode">☀️</button>
+        <a href="mailto:sumdev.studio.official@gmail.com" class="header-contact-link">
+          <span>✉️ Contact Support</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="compliance-pill">
+        <span class="pulse-dot"></span>
+        Google Play Store & GDPR Compliant
+      </div>
+      <h1 class="hero-title">
+        Privacy Policy & <span class="gradient-text">Terms of Service</span>
+      </h1>
+      <p class="hero-subtitle">
+        Transparent, privacy-first legal documentation and complete Data Safety declarations for Repeatify Pro.
+      </p>
+
+      <!-- Metadata Chips -->
+      <div class="meta-chips">
+        <div class="meta-chip">
+          <span>📦 App:</span>
+          <strong>Repeatify Pro</strong>
+        </div>
+        <div class="meta-chip">
+          <span>🆔 Package:</span>
+          <strong>com.repeatify.sumdev.app</strong>
+        </div>
+        <div class="meta-chip">
+          <span>🏢 Developer:</span>
+          <strong>SumDev Studio</strong>
+        </div>
+        <div class="meta-chip">
+          <span>📅 Effective Date:</span>
+          <strong>September 14, 2026</strong>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sticky Tab Navigation -->
+  <nav class="tab-switcher-wrapper">
+    <div class="container">
+      <div class="tab-switcher" role="tablist">
+        <button class="tab-btn active" data-tab="privacy" role="tab" aria-selected="true">
+          <span>🛡️</span> Privacy Policy
+        </button>
+        <button class="tab-btn" data-tab="terms" role="tab" aria-selected="false">
+          <span>📜</span> Terms of Service
+        </button>
+        <button class="tab-btn" data-tab="datasafety" role="tab" aria-selected="false">
+          <span>🔒</span> Play Data Safety
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Live Search Filter -->
+  <div class="container search-wrapper">
+    <span class="search-icon">🔍</span>
+    <input type="text" id="policySearch" class="search-input" placeholder="Quick search in policy (e.g., camera, data deletion, coins, refund)...">
+  </div>
+
+  <!-- Main Content Area -->
+  <main class="container main-grid">
+    <!-- Sidebar Table of Contents -->
+    <aside class="toc-sidebar">
+      <!-- Privacy TOC -->
+      <div id="privacyToc" class="toc-list-wrapper">
+        <div class="toc-title"><span>📌</span> On This Page</div>
+        <ul class="toc-list">
+          <li><a href="#p-overview" class="toc-link">1. Overview & Commitment</a></li>
+          <li><a href="#p-zero-data" class="toc-link">2. Zero Text Data Storage</a></li>
+          <li><a href="#p-data-collected" class="toc-link">3. Data We Collect</a></li>
+          <li><a href="#p-third-parties" class="toc-link">4. Third-Party Services</a></li>
+          <li><a href="#p-security" class="toc-link">5. Data Security</a></li>
+          <li><a href="#p-children" class="toc-link">6. Children's Privacy</a></li>
+          <li><a href="#p-deletion" class="toc-link">7. Data Deletion Rights</a></li>
+          <li><a href="#p-contact" class="toc-link">8. Contact Information</a></li>
+        </ul>
+      </div>
+
+      <!-- Terms TOC -->
+      <div id="termsToc" class="toc-list-wrapper" style="display: none;">
+        <div class="toc-title"><span>📌</span> Terms Contents</div>
+        <ul class="toc-list">
+          <li><a href="#t-agreement" class="toc-link">1. Agreement to Terms</a></li>
+          <li><a href="#t-usage" class="toc-link">2. Permitted & Fair Use</a></li>
+          <li><a href="#t-prohibited" class="toc-link">3. Prohibited Activities</a></li>
+          <li><a href="#t-coins" class="toc-link">4. Virtual Coins & Purchases</a></li>
+          <li><a href="#t-disclaimer" class="toc-link">5. Disclaimer & Warranty</a></li>
+          <li><a href="#t-termination" class="toc-link">6. Termination</a></li>
+          <li><a href="#t-contact" class="toc-link">7. Contact & Law</a></li>
+        </ul>
+      </div>
+
+      <!-- Data Safety TOC -->
+      <div id="dataSafetyToc" class="toc-list-wrapper" style="display: none;">
+        <div class="toc-title"><span>📌</span> Play Store Safety</div>
+        <ul class="toc-list">
+          <li><a href="#ds-summary" class="toc-link">Data Safety Matrix</a></li>
+          <li><a href="#ds-practices" class="toc-link">Security Practices</a></li>
+          <li><a href="#ds-request" class="toc-link">Account Deletion</a></li>
+        </ul>
+      </div>
+    </aside>
+
+    <!-- Main Content Panels -->
+    <div class="content-container">
+      
+      <!-- ================= TAB 1: PRIVACY POLICY ================= -->
+      <div id="privacyTabContent" class="content-section">
+        
+        <!-- Card 1: Overview -->
+        <article id="p-overview" class="policy-card">
+          <div class="card-header">
+            <div class="card-icon icon-purple">🛡️</div>
+            <h2 class="card-title">1. Overview & Privacy Commitment</h2>
+            <button class="copy-anchor-btn" onclick="copySectionLink('p-overview')" title="Copy link to this section">🔗</button>
+          </div>
+          <div class="card-body">
+            <p>
+              Welcome to <strong>Repeatify Pro</strong> ("we", "our", or "us"), developed and published by <strong>SumDev Studio</strong>. We recognize that your privacy is of the utmost importance. This Privacy Policy details how Repeatify Pro collects, handles, stores, and protects your information when you download, install, and use our mobile application (Package ID: <code>com.repeatify.sumdev.app</code>).
+            </p>
+            <div class="alert-box green">
+              <span class="alert-icon">✨</span>
+              <div class="alert-text">
+                <strong>Our Core Privacy Promise:</strong>
+                We believe your generated text, messages, and stylistic creations belong strictly to you. All text repetition algorithms, ASCII emoji arts, font transformations, and number decorations run <strong>100% locally on your device</strong>. We never read, upload, track, or save your text content on any cloud server.
+              </div>
+            </div>
+            <p>
+              By accessing or using Repeatify Pro, you acknowledge that you have read, understood, and agreed to the practices described in this Privacy Policy.
+            </p>
+          </div>
+        </article>
+
+        <!-- Card 2: Zero Text Storage -->
+        <article id="p-zero-data" class="policy-card">
+          <div class="card-header">
+            <div class="card-icon icon-green">🔒</div>
+            <h2 class="card-title">2. Information We NEVER Collect</h2>
+            <button class="copy-anchor-btn" onclick="copySectionLink('p-zero-data')" title="Copy link to this section">🔗</button>
+          </div>
+          <div class="card-body">
+            <p>Unlike many utilities that send user inputs to remote APIs, Repeatify Pro is engineered from the ground up for strict on-device data isolation. We do NOT collect or access:</p>
+            <div class="feature-matrix">
+              <div class="matrix-item">
+                <div class="matrix-header"><span>✍️</span> Generated Text</div>
+                <div class="matrix-desc">Whatever you type or repeat stays in device RAM and is never stored on external servers.</div>
+              </div>
+              <div class="matrix-item">
+                <div class="matrix-header"><span>📍</span> GPS Location</div>
+                <div class="matrix-desc">We never ask for or track precise or approximate geographical location.</div>
+              </div>
+              <div class="matrix-item">
+                <div class="matrix-header"><span>📸</span> Camera / Mic</div>
+                <div class="matrix-desc">No audio recordings, camera capture, or biometric sensors are ever utilized.</div>
+              </div>
+              <div class="matrix-item">
+                <div class="matrix-header"><span>📇</span> Contacts & Phone</div>
+                <div class="matrix-desc">WhatsApp Direct opens chat via standard intent without reading your contact book.</div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 3: Data We Collect -->
+        <article id="p-data-collected" class="policy-card">
+          <div class="card-header">
+            <div class="card-icon icon-blue">📊</div>
+            <h2 class="card-title">3. Data We Collect & How It Is Used</h2>
+            <button class="copy-anchor-btn" onclick="copySectionLink('p-data-collected')" title="Copy link to this section">🔗</button>
+          </div>
+          <div class="card-body">
+            <p>To provide cloud synchronization for purchased coins, user profiles, and app reliability, we collect limited categories of data:</p>
+            
+            <ul>
+              <li>
+                <strong>Account & Authentication Information:</strong> When you voluntarily register or sign in, we process your Email Address and account creation timestamps via <em>Google Firebase Authentication</em>. This ensures your coin balance and VIP status can be safely restored if you switch or reinstall devices.
+              </li>
+              <li>
+                <strong>Coin Vault & Purchase Records:</strong> When you purchase virtual coins through Google Play In-App Billing, a cryptographic receipt and order identifier is verified and synced to <em>Google Cloud Firestore</em> under your account. We never receive or store your credit card, debit card, or bank account numbers.
+              </li>
+              <li>
+                <strong>Anonymous Crash & Performance Diagnostics:</strong> We utilize <em>Firebase Crashlytics</em> to identify app freezes, memory allocation bottlenecks (such as during massive 50,000x repeat computations), and unexpected crashes. This includes device brand, Android OS version, and crash stack traces. No personally identifiable information is linked to crash diagnostics.
+              </li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Card 4: Third-Party Services -->
+        <article id="p-third-parties" class="policy-card">
+          <div class="card-header">
+            <div class="card-icon icon-amber">🌐</div>
+            <h2 class="card-title">4. Third-Party Service Providers</h2>
+            <button class="copy-anchor-btn" onclick="copySectionLink('p-third-parties')" title="Copy link to this section">🔗</button>
+          </div>
+          <div class="card-body">
+            <p>We work exclusively with certified industry leaders to deliver backend and payment infrastructure:</p>
+            <ul>
+              <li>
+                <strong>Google Play In-App Billing:</strong> Handles all in-app transactions, payment processing, tax calculation, and purchase security. (<a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>)
+              </li>
+              <li>
+                <strong>Google Firebase:</strong> Provides user authentication (Firebase Auth), database persistence (Cloud Firestore), and error telemetry (Firebase Crashlytics). (<a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Privacy Overview</a>)
+              </li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Card 5: Security -->
+        <article id="p-security" class="policy-card">
+          <div class="card-header">
+            <div class="card-icon icon-pink">🔐</div>
+            <h2 class="card-title">5. Data Security & Storage</h2>
+            <button class="copy-anchor-btn" onclick="copySectionLink('p-security')" title="Copy link to this section">🔗</button>
+          </div>
+          <div class="card-body">
+            <p>
+              All network transmissions between Repeatify Pro and Firebase servers are strictly protected using industry-standard <strong>Transport Layer Security (TLS 1.3 / HTTPS)</strong> encryption. Your password is never stored in plain text and is salted and hashed by Google's secure authentication infrastructure.
+            </p>
+            <p>
+              Local settings, themes, and sound preferences are stored locally on your device in secure sandbox storage (Android SharedPreferences) and remain inaccessible to other applications.
+            </p>
+          </div>
+        </article>
+
+        <!-- Card 6: Children's Privacy -->
+        <article id="p-children" class="policy-card">
+          <div class="card-header">
+            <div class="card-icon icon-purple">👶</div>
+            <h2 class="card-title">6. Children's Privacy (COPPA)</h2>
+            <button class="copy-anchor-btn" onclick="copySectionLink('p-children')" title="Copy link to this section">🔗</button>
+          </div>
+          <div class="card-body">
+            <p>
+              Repeatify Pro is intended for general audiences interested in creative typography and messaging fun. We do not knowingly collect personal information from children under 13 years of age (or the applicable age in your jurisdiction).
+            </p>
+            <p>
+              If you are a parent or guardian and become aware that your child has provided us with personal information without your consent, please contact us at <strong>sumdev.studio.official@gmail.com</strong>, and we will promptly delete such records from our servers.
+            </p>
+          </div>
+        </article>
+
+        <!-- Card 7: Data Deletion -->
+        <article id="p-deletion" class="policy-card">
+          <div class="card-header">
+            <div class="card-icon icon-green">🗑️</div>
+            <h2 class="card-title">7. User Rights & Account Deletion Request</h2>
+            <button class="copy-anchor-btn" onclick="copySectionLink('p-deletion')" title="Copy link to this section">🔗</button>
+          </div>
+          <div class="card-body">
+            <p>
+              In compliance with Google Play Developer Policies and global regulations (GDPR & CCPA), you have the right to access, export, or permanently delete your account and all associated cloud data at any time.
+            </p>
+            <div class="action-banner">
+              <div class="action-info">
+                <h3>Request Complete Data Deletion</h3>
+                <p>Send an email request from your registered address to delete your account, coin vault records, and purchase log permanently within 48 hours.</p>
+              </div>
+              <a href="mailto:sumdev.studio.official@gmail.com?subject=Delete%20My%20Repeatify%20Pro%20Account&body=Please%20delete%20all%20data%20associated%20with%20my%20email%20address%20from%20Repeatify%20Pro." class="btn-primary">
+                <span>✉️ Request Deletion</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 8: Contact -->
+        <article id="p-contact" class="policy-card">
+          <div class="card-header">
+            <div class="card-icon icon-amber">📬</div>
+            <h2 class="card-title">8. Contact Us</h2>
+            <button class="copy-anchor-btn" onclick="copySectionLink('p-contact')" title="Copy link to this section">🔗</button>
+          </div>
+          <div class="card-body">
+            <p>If you have any questions, feedback, or privacy-related concerns regarding Repeatify Pro, please reach out to our team:</p>
+            <ul>
+              <li><strong>Developer / Publisher:</strong> SumDev Studio</li>
+              <li><strong>Official Support Email:</strong> <a href="mailto:sumdev.studio.official@gmail.com">sumdev.studio.official@gmail.com</a></li>
+              <li><strong>Application ID:</strong> <code>com.repeatify.sumdev.app</code></li>
+            </ul>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- ================= TAB 2: TERMS OF SERVICE ================= -->
+      <div id="termsTabContent" class="content-section" style="display: none;">
+        
+        <article id="t-agreement" class="policy-card">
+          <div class="card-header">
+            <div class="card-icon icon-purple">📜</div>
+            <h2 class="card-title">1. Agreement to Terms</h2>
+            <button class="copy-anchor-btn" onclick="copySectionLink('t-agreement')" title="Copy link">🔗</button>
+          </div>
+          <div class="card-body">
+            <p>
+              These Terms of Service ("Terms") govern your use of the <strong>Repeatify Pro</strong> application developed by <strong>SumDev Studio</strong>. By downloading, installing, or using Repeatify Pro, you agree to be bound by these Terms. If you do not agree, please discontinue use and uninstall the application.
+            </p>
+          </div>
+        </article>
+
+        <article id="t-usage" class="policy-card">
+          <div class="card-header">
+            <div class="card-icon icon-green">✨</div>
+            <h2 class="card-title">2. Permitted & Fair Use</h2>
+            <button class="copy-anchor-btn" onclick="copySectionLink('t-usage')" title="Copy link">🔗</button>
+          </div>
+          <div class="card-body">
+            <p>
+              Repeatify Pro grants you a personal, revocable, non-exclusive, non-transferable license to use the app for creative typography, text repetition, social media bio decoration, messaging fun, and personal communication.
+            </p>
+            <p>
+              All fancy font styles (Unicode mathematical alphanumeric symbols), bubble letters, upside-down text, and ASCII arts are free for creative expression across messaging and social platforms.
+            </p>
+          </div>
+        </article>
+
+        <article id="t-prohibited" class="policy-card">
+          <div class="card-header">
+            <div class="card-icon icon-pink">🚫</div>
+            <h2 class="card-title">3. Prohibited Activities</h2>
+            <button class="copy-anchor-btn" onclick="copySectionLink('t-prohibited')" title="Copy link">🔗</button>
+          </div>
+          <div class="card-body">
+            <p>You agree NOT to use Repeatify Pro for:</p>
+            <ul>
+              <li>Transmitting spam, denial-of-service messaging, or unwanted flooding to any individual or group chat without consent.</li>
+              <li>Generating content that is abusive, defamatory, harassing, hateful, or promotes illegal acts.</li>
+              <li>Attempting to decompile, reverse-engineer, exploit bugs in, or tamper with the virtual coin vault or cloud sync endpoints.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article id="t-coins" class="policy-card">
+          <div class="card-header">
+            <div class="card-icon icon-amber">🪙</div>
+            <h2 class="card-title">4. Virtual Coins, In-App Purchases & Refunds</h2>
+            <button class="copy-anchor-btn" onclick="copySectionLink('t-coins')" title="Copy link">🔗</button>
+          </div>
+          <div class="card-body">
+            <p>
+              <strong>Repeatify Coins</strong> are digital in-app utility tokens designed solely for computing extensive repeat operations (e.g., 50,000x repeat batches) and activating VIP perks. Coins hold no monetary, fiat, or real-world cash value and cannot be exchanged, transferred, or redeemed for cash.
+            </p>
+            <p>
+              All purchases made via Google Play In-App Billing are subject to <strong>Google Play's Refund Policies</strong>. If you experience an unintentional purchase or billing error, you may request a refund directly through the Google Play Store account order history.
+            </p>
+          </div>
+        </article>
+
+        <article id="t-disclaimer" class="policy-card">
+          <div class="card-header">
+            <div class="card-icon icon-blue">⚖️</div>
+            <h2 class="card-title">5. Disclaimer of Warranties & Liability</h2>
+            <button class="copy-anchor-btn" onclick="copySectionLink('t-disclaimer')" title="Copy link">🔗</button>
+          </div>
+          <div class="card-body">
+            <p>
+              Repeatify Pro is provided on an "AS IS" and "AS AVAILABLE" basis without warranties of any kind. SumDev Studio shall not be held liable for any indirect, incidental, or consequential damages resulting from your use of generated text or messaging services.
+            </p>
+          </div>
+        </article>
+
+        <article id="t-termination" class="policy-card">
+          <div class="card-header">
+            <div class="card-icon icon-purple">🛑</div>
+            <h2 class="card-title">6. Termination</h2>
+            <button class="copy-anchor-btn" onclick="copySectionLink('t-termination')" title="Copy link">🔗</button>
+          </div>
+          <div class="card-body">
+            <p>
+              We reserve the right to suspend or terminate accounts that breach these Terms or engage in fraudulent exploitation of payment or coin sync systems.
+            </p>
+          </div>
+        </article>
+
+        <article id="t-contact" class="policy-card">
+          <div class="card-header">
+            <div class="card-icon icon-green">✉️</div>
+            <h2 class="card-title">7. Contact Information</h2>
+            <button class="copy-anchor-btn" onclick="copySectionLink('t-contact')" title="Copy link">🔗</button>
+          </div>
+          <div class="card-body">
+            <p>For inquiries regarding these Terms of Service, contact <strong>sumdev.studio.official@gmail.com</strong>.</p>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- ================= TAB 3: PLAY STORE DATA SAFETY ================= -->
+      <div id="dataSafetyTabContent" class="content-section" style="display: none;">
+        
+        <article id="ds-summary" class="policy-card">
+          <div class="card-header">
+            <div class="card-icon icon-green">📋</div>
+            <h2 class="card-title">Google Play Store Data Safety Questionnaire Answers</h2>
+            <button class="copy-anchor-btn" onclick="copySectionLink('ds-summary')" title="Copy link">🔗</button>
+          </div>
+          <div class="card-body">
+            <p>
+              Below is the exact data disclosure matching the Google Play Console Data Safety questionnaire for Repeatify Pro (<code>com.repeatify.sumdev.app</code>):
+            </p>
+
+            <div class="data-table-container">
+              <table class="data-table">
+                <thead>
+                  <tr>
+                    <th>Data Category</th>
+                    <th>Data Type</th>
+                    <th>Collected?</th>
+                    <th>Shared?</th>
+                    <th>Purpose</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>User Input / Content</strong></td>
+                    <td>Text repeated, styled fonts</td>
+                    <td><span class="badge-no">✕ NO</span></td>
+                    <td><span class="badge-no">✕ NO</span></td>
+                    <td>100% In-memory local processing on device</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Personal Info</strong></td>
+                    <td>Email Address</td>
+                    <td><span class="badge-yes">✓ YES (Optional)</span></td>
+                    <td><span class="badge-no">✕ NO</span></td>
+                    <td>Account creation & coin vault backup via Firebase</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Financial Info</strong></td>
+                    <td>Payment / Credit Cards</td>
+                    <td><span class="badge-no">✕ NO</span></td>
+                    <td><span class="badge-no">✕ NO</span></td>
+                    <td>Processed exclusively by Google Play Billing</td>
+                  </tr>
+                  <tr>
+                    <td><strong>App Activity</strong></td>
+                    <td>Purchase history (Coin packs)</td>
+                    <td><span class="badge-yes">✓ YES</span></td>
+                    <td><span class="badge-no">✕ NO</span></td>
+                    <td>App functionality & purchase fulfillment</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Diagnostics</strong></td>
+                    <td>Crash logs & performance</td>
+                    <td><span class="badge-yes">✓ YES (Anonymous)</span></td>
+                    <td><span class="badge-no">✕ NO</span></td>
+                    <td>Crash analytics via Firebase Crashlytics</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Location</strong></td>
+                    <td>GPS / Network Location</td>
+                    <td><span class="badge-no">✕ NO</span></td>
+                    <td><span class="badge-no">✕ NO</span></td>
+                    <td>Not collected</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="alert-box green">
+              <span class="alert-icon">🛡️</span>
+              <div class="alert-text">
+                <strong>Data Encryption:</strong>
+                All network data in transit is encrypted using HTTPS/TLS.
+              </div>
+            </div>
+
+            <div class="alert-box amber">
+              <span class="alert-icon">🗑️</span>
+              <div class="alert-text">
+                <strong>Data Deletion Mechanism:</strong>
+                Users can request full deletion of their email and coin purchase history anytime at <code>sumdev.studio.official@gmail.com</code>.
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand-wrapper">
+            <img src="assets/app_logo.png" alt="Logo" class="brand-logo" style="width:36px; height:36px;">
+            <span class="brand-title" style="font-size:1.15rem;">Repeatify Pro</span>
+          </div>
+          <p>The premier text repeater and fancy fonts studio for Android. Built with privacy and speed at core.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Legal & Safety</h4>
+          <ul class="footer-links">
+            <li><a href="#privacy">Privacy Policy</a></li>
+            <li><a href="#terms">Terms of Service</a></li>
+            <li><a href="#datasafety">Data Safety Matrix</a></li>
+            <li><a href="mailto:sumdev.studio.official@gmail.com?subject=Data%20Deletion%20Request">Request Data Deletion</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Developer</h4>
+          <ul class="footer-links">
+            <li><a href="#">SumDev Studio</a></li>
+            <li><a href="mailto:sumdev.studio.official@gmail.com">sumdev.studio.official@gmail.com</a></li>
+            <li><span style="color:var(--text-dim); font-size:0.85rem;">Package: com.repeatify.sumdev.app</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 SumDev Studio. All rights reserved.</div>
+        <div>Repeatify Pro™ — 100% Privacy-Friendly Text Studio</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+document.addEventListener('DOMContentLoaded', () => {
+  // 1. Theme Toggle
+  const themeToggleBtn = document.getElementById('themeToggleBtn');
+  const currentTheme = localStorage.getItem('repeatify_theme') || 'dark';
+  document.documentElement.setAttribute('data-theme', currentTheme);
+  updateThemeIcon(currentTheme);
+
+  if (themeToggleBtn) {
+    themeToggleBtn.addEventListener('click', () => {
+      const active = document.documentElement.getAttribute('data-theme');
+      const target = active === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', target);
+      localStorage.setItem('repeatify_theme', target);
+      updateThemeIcon(target);
+    });
+  }
+
+  function updateThemeIcon(theme) {
+    if (!themeToggleBtn) return;
+    themeToggleBtn.innerHTML = theme === 'dark' ? '☀️' : '🌙';
+    themeToggleBtn.setAttribute('aria-label', `Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`);
+  }
+
+  // 2. Tab Navigation Switcher (Privacy / Terms / Data Safety)
+  const tabBtns = document.querySelectorAll('.tab-btn');
+  const tabSections = {
+    privacy: document.getElementById('privacyTabContent'),
+    terms: document.getElementById('termsTabContent'),
+    datasafety: document.getElementById('dataSafetyTabContent')
+  };
+  const tocContainers = {
+    privacy: document.getElementById('privacyToc'),
+    terms: document.getElementById('termsToc'),
+    datasafety: document.getElementById('dataSafetyToc')
+  };
+
+  function switchTab(targetTab) {
+    tabBtns.forEach(btn => {
+      const isMatch = btn.dataset.tab === targetTab;
+      btn.classList.toggle('active', isMatch);
+      btn.setAttribute('aria-selected', isMatch ? 'true' : 'false');
+    });
+
+    Object.keys(tabSections).forEach(key => {
+      if (tabSections[key]) {
+        tabSections[key].style.display = key === targetTab ? 'flex' : 'none';
+      }
+      if (tocContainers[key]) {
+        tocContainers[key].style.display = key === targetTab ? 'flex' : 'none';
+      }
+    });
+
+    window.history.replaceState(null, '', `#${targetTab}`);
+    initScrollSpy();
+  }
+
+  tabBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      switchTab(btn.dataset.tab);
+    });
+  });
+
+  // Handle URL Hash on Load
+  const hash = window.location.hash.replace('#', '').toLowerCase();
+  if (['privacy', 'terms', 'datasafety'].includes(hash)) {
+    switchTab(hash);
+  } else {
+    switchTab('privacy');
+  }
+
+  // 3. Fast Live Search Filter
+  const searchInput = document.getElementById('policySearch');
+  if (searchInput) {
+    searchInput.addEventListener('input', (e) => {
+      const query = e.target.value.toLowerCase().trim();
+      const activeTabKey = document.querySelector('.tab-btn.active')?.dataset.tab || 'privacy';
+      const activeContainer = tabSections[activeTabKey];
+      if (!activeContainer) return;
+
+      const cards = activeContainer.querySelectorAll('.policy-card');
+      cards.forEach(card => {
+        const text = card.textContent.toLowerCase();
+        if (text.includes(query)) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  }
+
+  // 4. ScrollSpy for Active TOC Link
+  function initScrollSpy() {
+    const activeTabKey = document.querySelector('.tab-btn.active')?.dataset.tab || 'privacy';
+    const activeContainer = tabSections[activeTabKey];
+    if (!activeContainer) return;
+
+    const cards = activeContainer.querySelectorAll('.policy-card[id]');
+    const activeToc = tocContainers[activeTabKey];
+    if (!activeToc) return;
+    const links = activeToc.querySelectorAll('.toc-link');
+
+    window.addEventListener('scroll', () => {
+      let currentId = '';
+      cards.forEach(card => {
+        const top = card.offsetTop - 140;
+        if (window.scrollY >= top) {
+          currentId = card.getAttribute('id');
+        }
+      });
+
+      links.forEach(link => {
+        link.classList.toggle('active', link.getAttribute('href') === `#${currentId}`);
+      });
+    }, { passive: true });
+  }
+
+  initScrollSpy();
+
+  // 5. Copy Anchor Link
+  window.copySectionLink = function(anchorId) {
+    const url = `${window.location.origin}${window.location.pathname}#${anchorId}`;
+    navigator.clipboard.writeText(url).then(() => {
+      showToast('Link copied to clipboard! 📋');
+    }).catch(() => {
+      showToast('Section ID: #' + anchorId);
+    });
+  };
+
+  function showToast(message) {
+    let toast = document.getElementById('webToast');
+    if (!toast) {
+      toast = document.createElement('div');
+      toast.id = 'webToast';
+      toast.style.position = 'fixed';
+      toast.style.bottom = '28px';
+      toast.style.right = '28px';
+      toast.style.backgroundColor = '#6366F1';
+      toast.style.color = '#FFFFFF';
+      toast.style.padding = '12px 22px';
+      toast.style.borderRadius = '30px';
+      toast.style.boxShadow = '0 8px 24px rgba(99, 102, 241, 0.4)';
+      toast.style.fontSize = '0.92rem';
+      toast.style.fontWeight = '600';
+      toast.style.zIndex = '9999';
+      toast.style.transition = 'all 0.3s ease';
+      document.body.appendChild(toast);
+    }
+    toast.textContent = message;
+    toast.style.opacity = '1';
+    toast.style.transform = 'translateY(0)';
+
+    setTimeout(() => {
+      toast.style.opacity = '0';
+      toast.style.transform = 'translateY(10px)';
+    }, 2500);
+  }
+});
+
+</script>
+</body>
+</html>
+
