@@ -29,9 +29,9 @@
   --text-muted: #94A3B8;
   --text-dim: #64748B;
   
-  --primary: #6366F1;
-  --primary-glow: rgba(99, 102, 241, 0.35);
-  --secondary: #8B5CF6;
+  --primary: #06B6D4;
+  --primary-glow: rgba(6, 182, 212, 0.35);
+  --secondary: #3B82F6;
   --accent-pink: #EC4899;
   --accent-cyan: #06B6D4;
   --accent-green: #10B981;
@@ -52,16 +52,16 @@
   --bg-card: rgba(255, 255, 255, 0.85);
   --bg-card-hover: #FFFFFF;
   --bg-glass: rgba(255, 255, 255, 0.8);
-  --border-color: rgba(99, 102, 241, 0.15);
-  --border-hover: rgba(99, 102, 241, 0.35);
+  --border-color: rgba(6, 182, 212, 0.18);
+  --border-hover: rgba(6, 182, 212, 0.38);
   
   --text-main: #0F172A;
   --text-muted: #475569;
   --text-dim: #94A3B8;
   
   --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.05);
-  --shadow-md: 0 12px 32px -4px rgba(99, 102, 241, 0.08);
-  --shadow-glow: 0 0 25px rgba(99, 102, 241, 0.15);
+  --shadow-md: 0 12px 32px -4px rgba(6, 182, 212, 0.1);
+  --shadow-glow: 0 0 25px rgba(6, 182, 212, 0.2);
 }
 
 * {
@@ -951,7 +951,7 @@ footer.site-footer {
           <li><a href="#p-third-parties" class="toc-link">4. Third-Party Services</a></li>
           <li><a href="#p-security" class="toc-link">5. Data Security</a></li>
           <li><a href="#p-children" class="toc-link">6. Children's Privacy</a></li>
-          <li><a href="#p-deletion" class="toc-link">7. Data Deletion Rights</a></li>
+          <li><a href="#p-deletion" class="toc-link">7. In-App Account Deletion</a></li>
           <li><a href="#p-contact" class="toc-link">8. Contact Information</a></li>
         </ul>
       </div>
@@ -1123,20 +1123,43 @@ footer.site-footer {
         <article id="p-deletion" class="policy-card">
           <div class="card-header">
             <div class="card-icon icon-green">🗑️</div>
-            <h2 class="card-title">7. User Rights & Account Deletion Request</h2>
+            <h2 class="card-title">7. User Rights & Account Deletion (In-App & Online)</h2>
             <button class="copy-anchor-btn" onclick="copySectionLink('p-deletion')" title="Copy link to this section">🔗</button>
           </div>
           <div class="card-body">
             <p>
-              In compliance with Google Play Developer Policies and global regulations (GDPR & CCPA), you have the right to access, export, or permanently delete your account and all associated cloud data at any time.
+              In compliance with Google Play Developer Policies and global privacy laws (GDPR, CCPA), you have complete ownership of your data. You can delete your account, authentication records, and cloud coin vault permanently at any time using either our built-in instant self-service option or via email.
             </p>
+
+            <!-- Method 1: Instant In-App Deletion -->
+            <div class="alert-box red" style="background: rgba(239, 68, 68, 0.1); border: 1px solid rgba(239, 68, 68, 0.3); border-radius: 12px; padding: 16px; margin: 16px 0;">
+              <span class="alert-icon" style="font-size: 1.5rem;">⚡</span>
+              <div class="alert-text">
+                <strong style="color: #F87171; font-size: 1.05rem;">Method 1: Instant In-App Account Deletion (Self-Service)</strong>
+                <p style="margin-top: 8px; color: var(--text-main);">
+                  You can permanently delete your account directly from within Repeatify Pro in real time:
+                </p>
+                <ol style="margin-top: 8px; margin-left: 20px; line-height: 1.8;">
+                  <li>Open the <strong>Repeatify Pro</strong> app on your Android device.</li>
+                  <li>Tap your <strong>User Avatar</strong> on the top bar of the Home Screen to open your Profile (or navigate to <strong>Settings</strong> &gt; <strong>Delete Account & Data</strong>).</li>
+                  <li>Tap <strong>"Delete Account Permanently"</strong>.</li>
+                  <li>To prevent accidental deletion, type <code style="background: rgba(239, 68, 68, 0.25); color: #FCA5A5; font-weight: 700; padding: 2px 8px; border-radius: 4px; letter-spacing: 1px;">CONFIRM</code> in capital letters into the confirmation box.</li>
+                  <li>Tap the <strong>"DELETE PERMANENTLY"</strong> button.</li>
+                </ol>
+                <p style="margin-top: 8px; font-size: 0.9rem; color: var(--text-muted);">
+                  <em>Result:</em> Your Firebase Authentication credentials, active session tokens, local preferences, and synced coin balances are completely and irreversibly erased immediately.
+                </p>
+              </div>
+            </div>
+
+            <!-- Method 2: Manual Email Request -->
             <div class="action-banner">
               <div class="action-info">
-                <h3>Request Complete Data Deletion</h3>
-                <p>Send an email request from your registered address to delete your account, coin vault records, and purchase log permanently within 48 hours.</p>
+                <h3>Method 2: Email Deletion Request (Alternative)</h3>
+                <p>If you have already uninstalled the app or cannot access your account, send an email from your registered address to request permanent manual deletion of your records within 48 hours.</p>
               </div>
               <a href="mailto:sumdev.studio.official@gmail.com?subject=Delete%20My%20Repeatify%20Pro%20Account&body=Please%20delete%20all%20data%20associated%20with%20my%20email%20address%20from%20Repeatify%20Pro." class="btn-primary">
-                <span>✉️ Request Deletion</span>
+                <span>✉️ Request Deletion via Email</span>
               </a>
             </div>
           </div>
@@ -1241,12 +1264,15 @@ footer.site-footer {
         <article id="t-termination" class="policy-card">
           <div class="card-header">
             <div class="card-icon icon-purple">🛑</div>
-            <h2 class="card-title">6. Termination</h2>
+            <h2 class="card-title">6. Termination & Voluntary Account Deletion</h2>
             <button class="copy-anchor-btn" onclick="copySectionLink('t-termination')" title="Copy link">🔗</button>
           </div>
           <div class="card-body">
             <p>
-              We reserve the right to suspend or terminate accounts that breach these Terms or engage in fraudulent exploitation of payment or coin sync systems.
+              <strong>By You:</strong> You may terminate your agreement and permanently delete your account at any time. Simply open Repeatify Pro, navigate to your Profile or Settings, select <em>"Delete Account Permanently"</em>, type <strong>CONFIRM</strong>, and confirm. All your cloud data, Firebase credentials, and coin vault records will be wiped immediately and irrevocably.
+            </p>
+            <p>
+              <strong>By Us:</strong> We reserve the right to suspend or terminate accounts that breach these Terms, attempt unauthorized reverse-engineering, or engage in fraudulent exploitation of payment or coin balance systems.
             </p>
           </div>
         </article>
@@ -1347,8 +1373,8 @@ footer.site-footer {
             <div class="alert-box amber">
               <span class="alert-icon">🗑️</span>
               <div class="alert-text">
-                <strong>Data Deletion Mechanism:</strong>
-                Users can request full deletion of their email and coin purchase history anytime at <code>sumdev.studio.official@gmail.com</code>.
+                <strong>Data Deletion Mechanism (Google Play Compliant):</strong>
+                Users can instantly delete their account, email identity, and coin vault records self-service within the app by typing <code>CONFIRM</code> under Profile or Settings. Alternatively, users may request deletion via email at <code>sumdev.studio.official@gmail.com</code>.
               </div>
             </div>
           </div>
